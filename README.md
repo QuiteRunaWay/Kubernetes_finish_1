@@ -82,8 +82,23 @@ kubectl get secret domain-cert -o yaml > domain-cert.yml
 kubectl delete secret domain-cert
 ```
 
+## Ответ: секрет удален:
+
+![image](https://user-images.githubusercontent.com/92969676/201520843-a1b5c0cc-f3bb-4bcb-b9b0-635a744fa298.png)
+
+Можем убедиться, что секретов больше нет:
+
+![image](https://user-images.githubusercontent.com/92969676/201520859-4637028b-f370-4bb3-be10-b6d48e3d087c.png)
+
 ### Как загрузить секрет из файла?
 
 ```
 kubectl apply -f domain-cert.yml
 ```
+
+Ответ: после удаления загрузим секрет из файла и проверим наличие секрета в кластере:
+
+![image](https://user-images.githubusercontent.com/92969676/201520889-7ef02f60-2364-43a3-a16a-502e2bc33df1.png)
+
+
+
