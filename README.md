@@ -20,7 +20,7 @@ kubectl create secret tls domain-cert --cert=certs/cert.crt --key=certs/cert.key
 
 
 
-### 1.2 Как просмотреть список секретов?
+## 1.2 Как просмотреть список секретов?
 
 ```
 kubectl get secrets
@@ -31,7 +31,7 @@ kubectl get secret
 
 ![image](https://user-images.githubusercontent.com/92969676/201520465-a16ed64b-0fa0-4e86-afad-437459c23626.png)
 
-### 1.3 Как просмотреть секрет?
+## 1.3 Как просмотреть секрет?
 
 ```
 kubectl get secret domain-cert
@@ -43,7 +43,7 @@ kubectl describe secret domain-cert
 ![image](https://user-images.githubusercontent.com/92969676/201520495-03ad1109-eacf-4466-b49e-178cf9ce6ce1.png)
 
 
-### 1.4 Как получить информацию в формате YAML и/или JSON?
+## 1.4 Как получить информацию в формате YAML и/или JSON?
 
 ```
 kubectl get secret domain-cert -o yaml
@@ -56,7 +56,7 @@ kubectl get secret domain-cert -o json
 ![image](https://user-images.githubusercontent.com/92969676/201520587-180d32bc-eb45-4df8-b361-31e8fe199de3.png)
 
 
-### 1.5 Как выгрузить секрет и сохранить его в файл?
+## 1.5 Как выгрузить секрет и сохранить его в файл?
 
 ```
 kubectl get secrets -o json > secrets.json
@@ -76,7 +76,7 @@ kubectl get secret domain-cert -o yaml > domain-cert.yml
 
 
 
-### 1.6 Как удалить секрет?
+## 1.6 Как удалить секрет?
 
 ```
 kubectl delete secret domain-cert
@@ -90,7 +90,7 @@ kubectl delete secret domain-cert
 
 ![image](https://user-images.githubusercontent.com/92969676/201520859-4637028b-f370-4bb3-be10-b6d48e3d087c.png)
 
-### 1.7 Как загрузить секрет из файла?
+## 1.7 Как загрузить секрет из файла?
 
 ```
 kubectl apply -f domain-cert.yml
