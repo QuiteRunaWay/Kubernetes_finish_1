@@ -14,7 +14,7 @@ openssl req -x509 -new -key cert.key -days 3650 -out cert.crt \
 kubectl create secret tls domain-cert --cert=certs/cert.crt --key=certs/cert.key
 ```
 
-## Ответ: серкрет создан:
+## Ответ: секрет создан:
 
 ![image](https://user-images.githubusercontent.com/92969676/201520440-ad42fced-d86f-4d13-b5f4-aa8ac6a818c6.png)
 
